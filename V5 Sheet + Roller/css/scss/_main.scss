@@ -1,0 +1,43 @@
+
+.resources {
+  margin-top: 10px;
+  border-width: 2px;
+  border-color: red;
+  border-style: groove;
+  border-radius: 15px;
+    height: 40px;
+    .hp{
+      margin-left: 0% !important;
+        b{
+          margin-left: 45%;
+        }
+       // padding-right: 4%;
+    }
+    .wp{
+      padding-left: 7%;
+      padding-right: 0%;
+      margin-left: 0;
+      b{
+          margin-left: 40%;
+        }
+    }
+    .hunger-sqr-input{
+      margin-left: 12%;
+      b{
+          margin-left: 30%;
+        }
+    }
+    label {
+        margin-bottom: 0;
+      b {
+        margin-left: 20px;
+      }
+    }
+  }
+  .atributes, .skills {
+    margin-top: 10px;
+    border-width: 2px;
+    border-color: red;
+    border-style: groove;
+    border-radius: 15px;
+  }

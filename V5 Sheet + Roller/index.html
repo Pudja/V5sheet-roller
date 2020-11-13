@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/sil2.css" />
+    <title>V5 sheet with inate roller</title>
+  </head>
+  <body>
+    <nav>
+      <button id="toggle_mode">Edit Mode</button>
+      <button class="Diceroller" id="dice_roller" >Diceroller</button>
+      <div class="dice_result" ></div>
+      <button class="reroll" id="wp_reroll">Willpower reroll</button>
+    </nav>
+    <div id="tooltip">asas</div>
+    <header>
+      <div class="column1">
+        <label class="name" for="name_input"><b>Name:</b> <input type="text" class="header-txt-input name_input" /></label>
+        <label class="" for=""><b>Player:</b> <input type="text" class="header-txt-input player_input" /></label>
+        <label class="" for=""><b>Chronicle: </b> <input type="text" class="header-txt-input chronicle_input" /></label>
+      </div>
+
+      <div class="column2">
+        <label class="" for=""><b>Concept</b> <input type="text" class="header-txt-input concept_input" /></label>
+        <label class="" for=""><b>Ambition</b> <input type="text" class="header-txt-input ambition_input" /></label>
+        <label class="" for=""><b>Predator</b> <select name="predators" id="predatorList">
+            <option value="" disabled selected hidden>
+                Chose predator type
+              </option>
+        </select></label>
+      </div>
+
+      <div class="column3">
+        <label class="sire_over_class" for=""><b>Sire</b> <input type="text" class="header-txt-input sire_input" /></label><br/>
+        <label class="clan_over_class" for=""><b>Clan</b> <select name="clans" id="clanList" size="1">
+            <option value="" disabled selected hidden>
+                Chose clan
+              </option>
+        </select> </label>
+        <label class="generation_over_class" for=""><b>Generation</b> <select name="generation" id="generation">
+            <option value="" disabled selected hidden>
+                Chose generation
+              </option>
+        </select></label>
+      </div>
+    </header>
+
+    <main>
+      <section class="atributes">
+        <div class="column1 column">
+          <label class="dot-input" for="Strength"><b>Strength</b></label><br />
+          <label class="dot-input" for="Dexterity"><b>Dexterity</b></label><br />
+          <label class="dot-input" for="Stamina"><b>Stamina</b></label></div>
+
+          <div class="column2 column">
+          <label class="dot-input" for="Charisma"><b>Charisma</b></label> <br />
+          <label class="dot-input" for="Manipulation"><b>Manipulation</b></label><br />
+          <label class="dot-input" for="Composure"><b>Composure</b></label>
+        </div>
+
+        <div class="column3 column">
+          <label class="dot-input" for="Inteligence"><b>Inteligence</b></label><br />
+          <label class="dot-input" for="Wits"><b>Wits</b></label><br />
+          <label class="dot-input" for="Resolve"><b>Resolve</b></label>
+        </div>
+    </section>
+      <section class="skills">
+        <div class="column1 column">
+          <label class="dot-input" for="Athletics"><b>Athletics</b></label> <br />
+          <label class="dot-input" for="Brawl"><b>Brawl</b></label> <br />
+          <label class="dot-input" for="Craft"><b>Craft</b></label> <br />
+          <label class="dot-input" for="Drive"><b>Drive</b> </label> <br />
+          <label class="dot-input" for="Firearms"><b>Firearms</b> </label> <br />
+          <label class="dot-input" for="Larceny"><b>Larceny</b> </label> <br />
+          <label class="dot-input" for="Melee"><b>Melee</b> </label> <br />
+          <label class="dot-input" for="Stealth"><b>Stealth</b> </label> <br />
+          <label class="dot-input" for="Survival"><b>Survival</b> </label>
+        </div>
+        <div class="column2 column">
+          <label class="dot-input" for="Animal_Ken"><b>Animal Ken</b></label> <br />
+          <label class="dot-input" for="Etiquete"><b>Etiquete</b></label><br />
+          <label class="dot-input" for="Insight"><b>Insight</b></label> <br />
+          <label class="dot-input" for="Intimidation"><b>Intimidation</b></label> <br />
+          <label class="dot-input" for="Leadership"><b>Leadership</b></label><br />
+          <label class="dot-input" for="Performance"><b>Performance</b></label> <br />
+          <label class="dot-input" for="Persuation"><b>Persuation</b></label> <br />
+          <label class="dot-input" for="Streetwise"><b>Streetwise</b></label><br />
+          <label class="dot-input" for="Subterfuge"><b>Subterfuge</b></label>
+        </div>
+        <div class="column3 column">
+          <label class="dot-input" for="Accademics"><b>Accademics</b></label><br />
+          <label class="dot-input" for="Awareness"><b>Awareness</b></label><br />
+          <label class="dot-input" for="Finance"><b>Finance</b></label><br />
+          <label class="dot-input" for="Investigation"><b>Investigation</b></label><br />
+          <label class="dot-input" for="Medicine"><b>Medicine</b></label><br />
+          <label class="dot-input" for="Occult"><b>Occult</b></label><br />
+          <label class="dot-input" for="Politics"><b>Politics</b></label><br />
+          <label class="dot-input" for="Science"><b>Science</b></label><br />
+          <label class="dot-input" for="Technology"><b>Technology</b></label>
+        </div>
+    </section>
+    <section class="resources">
+        <label class="sqr-input hp"><b>Health</b><br></label>
+        <label class="sqr-input wp"><b>Willpower</b><br></label>
+        <label class="hunger-sqr-input"><b>Hunger</b><br></label>
+    </section>
+
+    </main>
+
+    <footer class="disciplines">
+        <table>
+            <thead>
+              <tr>
+                <th>
+                  <select name="Disciplines" class="disciplineList" id="disciplineList1">
+                    <option value="" disabled selected hidden>Please Choose...</option>
+                  </select>
+                  <label class="dot-input"></label>
+                </th>
+                <th>
+                  <select name="Disciplines" class="disciplineList" id="disciplineList2">
+                    <option value="" disabled selected hidden>Please Choose...</option>
+                  </select>
+                  <label class="dot-input"></label>
+                </th>
+                <th>
+                  <select name="Disciplines" class="disciplineList" id="disciplineList3">
+                    <option value="" disabled selected hidden>Please Choose...</option>
+                  </select>
+                  <label class="dot-input"></label>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row1">
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+              </tr>
+              <tr class="row2">
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+              </tr>
+              <tr class="row3">
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+              </tr>
+              <tr class="row4">
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+              </tr>
+              <tr class="row5">
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+              </tr>
+            </tbody>
+          </table>
+    
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/nav_bar.js"></script>
+    <script type="text/javascript" src="js/clans.js"></script>
+    <script type="text/javascript" src="js/main2.js"></script>
+    <script type="text/javascript" src="js/hpWill.js"></script>
+    <script type="text/javascript" src="js/site_state.js"></script>
+    <script type="text/javascript" src="js/dice.js"></script>
+    <script type="text/javascript" src="js/discipines.js"></script>
+    <script type="text/javascript" src="js/predator.js"></script>
+    <script type="text/javascript" src="js/tooltips.js"></script>
+    <script type="text/javascript" src="js/select.js"></script>
+  </body>
+</html>

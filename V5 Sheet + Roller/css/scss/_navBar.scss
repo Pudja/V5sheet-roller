@@ -1,0 +1,41 @@
+nav {
+  height: 8%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  opacity: 1;
+  z-index: 2;
+  button {
+    height: 100%;
+    float: left;
+    display: block;
+    color: white;
+    border-color: red;
+    background-color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 1;
+  }
+}
+#dice_roller{
+  display: none;
+}
+.dice_result {
+    display: inline-block;
+  height: 100%;
+  background-color: blue;
+}
+.reroll {
+  float: right;
+}
+#wp_reroll{
+  display: none;
+}
+.selected{
+  background-color: green;
+}
