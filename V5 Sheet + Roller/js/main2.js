@@ -57,5 +57,4 @@ $(document).ready(function () {
       thisParent.nextAll().find(".checksqr").prop("checked", false);
     }
   });
-
 });

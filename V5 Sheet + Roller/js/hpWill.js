@@ -54,12 +54,18 @@ $(document).ready(function () {
   });
   hpCheckmark.click(function(){
     var thisParent = $(this).parent();
+    var q= 0
+    var xLenght = $(this).parent().prevUntil(".hp").find(".checkmark:contains(X)").length
     if($(this).siblings("input:checkbox").prop("checked") === true){
     if($(this).text() === ""){
       $(this).parent().prevUntil(".hp").find(".checkmark").text("|");
       $(this).parent().prevUntil(".hp").find(".checkmark").addClass("superficial")
       $(this).addClass("superficial")
       $(this).text("|")
+      while(q<xLenght){
+        $(this).parent().prevUntil(".hp").find(".checkmark:contains(|)").first().text("X")
+        q++
+      }
     }else if($(this).text() === "|"){
       $(this).parent().prevUntil(".hp").find(".checkmark").removeClass("superficial")
       $(this).removeClass("superficial")
@@ -78,12 +84,18 @@ $(document).ready(function () {
   });
   wpCheckmark.click(function(){
     var thisParent = $(this).parent();
+    var q= 0
+    var xLenght = $(this).parent().prevUntil(".wp").find(".checkmark:contains(X)").length
     if($(this).siblings("input:checkbox").prop("checked") === true){
     if($(this).text() === ""){
       $(this).parent().prevUntil(".wp").find(".checkmark").text("|");
       $(this).parent().prevUntil(".wp").find(".checkmark").addClass("superficial")
       $(this).addClass("superficial")
       $(this).text("|")
+      while(q<xLenght){
+        $(this).parent().prevUntil(".wp").find(".checkmark:contains(|)").first().text("X")
+        q++
+      }
     }else if($(this).text() === "|"){
       $(this).parent().prevUntil(".wp").find(".checkmark").removeClass("superficial")
       $(this).removeClass("superficial")

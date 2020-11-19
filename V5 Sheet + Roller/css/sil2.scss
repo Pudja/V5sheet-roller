@@ -5,7 +5,7 @@
 @import "./scss/main";
 @import "./scss/dots";
 @import "./scss/navBar";
-@import "./scss/newDropDown";
+@import "./scss/table";
 
 //General rules
 body {
@@ -43,7 +43,7 @@ footer {
 label {
   position: relative;
   float: left;
-  margin-left: 3%;
+  margin-left: 2%;
   margin-bottom: 3%;
   b {
     display: inline-block;
@@ -53,12 +53,16 @@ label {
 
 .active{
   background-color: red;
+  border-radius: 19px;
 }
 img{
-  height: 45px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  height: 100%; 
   width: 30px;
   display: inline-block;
 }
 .hungry{
   background-color:red;
+  
 }

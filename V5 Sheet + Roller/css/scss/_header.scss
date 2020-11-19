@@ -1,61 +1,69 @@
-header{
-    border-width: 2px;
-    border-color: red;
-    border-style: groove;
-    border-radius: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    align-content: center;
+header {
+  border-width: 2px;
+  border-color: red;
+  border-style: groove;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-content: center;
 }
 .header-txt-input {
-    height: 33%;
-    border-style: hidden;
-    outline: none;
+  height: 33%;
+  border-style: hidden;
+  outline: none;
+  border-radius: 5px;
+}
+.name_input {
+  margin-left: 2%;
+  width: 60%;
+}
+.player_input {
+  width: 58%;
+  margin-left: 2%;
+}
+.chronicle_input {
+  margin-left: 2%;
+  width: 48%;
+}
+.concept_input {
+  margin-left: 2%;
+  width: 59%;
+}
+.ambition_input {
+  margin-left: 2%;
+  width: 55%;
+}
+#predatorList {
+  display: inline-block;
+}
+.sire_input {
+  width: 75%;
+  margin-left: 2%;
+}
+.clan_over_class {
+  select {
+    margin-left: 2%;
+    width: 60%;
   }
-.name_input{
-    margin-left:2%;
-    width:60%;
 }
-.player_input{
-    width:58%;
-    margin-left:2%;
+.generation_over_class {
+  select {
+    margin-left: 2%;
+    width: 55%;
+  }
+  display: inline;
 }
-.chronicle_input{
-    margin-left:2%;
-    width:48%
-}
-.concept_input{
-    margin-left:2%;
-    width:59%
-}
-.ambition_input{
-    margin-left:2%;
-    width:55%
+
+.header-txt-input:focus {
+  background-color: gray;
+  color: aliceblue;
 }
 #predatorList{
-    display: inline-block;
-
+    border-radius: 5px;
 }
-.sire_input{
-    width:75%;
-    margin-left: 2%;
+#clanList{
+    border-radius: 5px;
 }
-.clan_over_class{
-    select{
-        margin-left: 2%;
-        width: 60%;
-    }
-
+#generation{
+    border-radius: 5px;
 }
-.generation_over_class{
-    select{
-        margin-left: 2%;
-        width: 55%;
-    }
-display: inline;
-}
-  
-  .header-txt-input:focus{
-    background-color: gray;
-    color: aliceblue;
-  }

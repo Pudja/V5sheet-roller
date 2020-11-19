@@ -10,6 +10,7 @@ $(document).ready(function () {
       $("#dice_roller").css("display", "block");
       $("#wp_reroll").css("display", "block");
       playMode = true;
+
     } else {
       checkbox.removeAttr("disabled");
       $(".atributes").find(".active").removeClass("active");
@@ -31,5 +32,7 @@ $(document).ready(function () {
         }
       });
     });
+
+
   });
 });

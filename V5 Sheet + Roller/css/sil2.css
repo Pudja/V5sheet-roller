@@ -13,6 +13,7 @@ header {
   height: 33%;
   border-style: hidden;
   outline: none;
+  border-radius: 5px;
 }
 
 .name_input {
@@ -68,6 +69,18 @@ header {
   color: aliceblue;
 }
 
+#predatorList {
+  border-radius: 5px;
+}
+
+#clanList {
+  border-radius: 5px;
+}
+
+#generation {
+  border-radius: 5px;
+}
+
 #tooltip {
   float: right;
   width: 19%;
@@ -99,6 +112,7 @@ th .dot-input {
 }
 
 .resources .hp {
+  padding-left: 1%;
   margin-left: 0% !important;
 }
 
@@ -138,6 +152,10 @@ th .dot-input {
   border-color: red;
   border-style: groove;
   border-radius: 15px;
+}
+
+.disciplineList {
+  border-radius: 5px;
 }
 
 /* Container */
@@ -195,6 +213,12 @@ th .dot-input {
   line-height: 80%;
 }
 
+.dot-input {
+  padding-left: 4px;
+  padding-right: 10px;
+  padding-top: 4px;
+}
+
 nav {
   height: 8%;
   list-style-type: none;
@@ -244,51 +268,14 @@ nav button {
   background-color: green;
 }
 
-.styled-dropdown {
-  border: 1px solid #333333;
-  color: #000000;
-  cursor: pointer;
-  float: left;
-  height: 20px;
-  line-height: 20px;
-  position: relative;
-  width: 200px;
+th .dot-input {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
 }
 
-.styled-dropdown p {
-  height: 20px;
-  line-height: 20px;
-  padding: 0 0 0 3px;
-  margin: 0;
-}
-
-ul.styled-dropdown-list {
-  border: 1px solid #333333;
-  color: #000000;
-  cursor: pointer;
-  float: left;
-  left: -1px;
-  line-height: 20px;
-  list-style: none outside none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 200px;
-  z-index: 1;
-}
-
-ul.styled-dropdown-list li {
-  background: #fff;
-  padding: 0 0 0 3px;
-}
-
-ul.styled-dropdown-list li.odd {
-  background: #E8E7E6;
-}
-
-ul.styled-dropdown-list li:hover {
-  background: #666;
-  color: #fff;
+td {
+  padding-left: 70px;
 }
 
 body {
@@ -337,7 +324,7 @@ footer {
 label {
   position: relative;
   float: left;
-  margin-left: 3%;
+  margin-left: 2%;
   margin-bottom: 3%;
 }
 
@@ -348,10 +335,13 @@ label b {
 
 .active {
   background-color: red;
+  border-radius: 19px;
 }
 
 img {
-  height: 45px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  height: 100%;
   width: 30px;
   display: inline-block;
 }
